@@ -18,36 +18,13 @@
   gap: 1.5rem;
 }
 
-.container p {
+.welcomeText {
   font-size: 1.8rem;
   margin: 0;
   font-weight: 500;
 }
 
-.container button {
-  background-color: #7209b7;
-  color: #ffffff;
-  border: none;
-  padding: 0.8rem 2rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.container button:hover {
-  background-color: #9d4edd;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.container button:active {
-  transform: translateY(0);
-  box-shadow: none;
-}
-
-.container p:last-child {
+.footerText {
   margin-top: 2rem;
   font-size: 1rem;
   color: #6a4c93;

@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
+import { Button, Typography } from "antd";
 import styles from "./mainPage.module.scss";
+
+const { Paragraph } = Typography;
 
 export const MainPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.containerInner}>
-        <p>Добро пожаловать!</p>
+        <Paragraph className={styles.welcomeText}>Добро пожаловать!</Paragraph>
         <Link to="/form-page">
-          <button>Нажмите для продолжения</button>
+          <Button type="primary" size="large">
+            Нажмите для продолжения
+          </Button>
         </Link>
       </div>
-      <p>Этот сайт создан Губичем Александром для целей ТЗ.</p>
+      <Paragraph className={styles.footerText}>
+        Этот сайт создан Губичем Александром для целей ТЗ.
+      </Paragraph>
     </div>
   );
 };
